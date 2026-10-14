@@ -1,1 +1,100 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taller interactivo de normas APA séptima edición para estudiantes de grado octavo.">
+<title>Taller de Normas APA | Grado 8°</title>
+<style>
+:root{--navy:#14213d;--blue:#2457c5;--cyan:#dff4ff;--gold:#ffca3a;--ink:#20283a;--muted:#5e687b;--paper:#fff;--bg:#f3f6fb;--green:#18794e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.65;color:var(--ink);background:var(--bg)}
+header{background:linear-gradient(130deg,#14213d,#2457c5);color:#fff;padding:44px 20px 38px}
+.wrap{max-width:1000px;margin:auto;padding:0 18px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-weight:bold;font-size:.8rem;color:var(--gold)}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:12px 0}header p{max-width:720px;font-size:1.1rem}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid #ffffff77;border-radius:99px;padding:5px 12px;font-size:.9rem}
+nav{background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 12px #14213d12}.navinner{max-width:1000px;margin:auto;display:flex;gap:6px;overflow-x:auto;padding:10px 18px}nav a{white-space:nowrap;text-decoration:none;color:var(--navy);font-weight:bold;padding:7px 11px;border-radius:8px}nav a:hover{background:var(--cyan)}
+main{padding:24px 0 55px}.card{background:var(--paper);border-radius:16px;padding:24px;margin:18px 0;box-shadow:0 6px 24px #14213d0b;border:1px solid #e4eaf4}
+h2{color:var(--navy);font-size:1.55rem;margin-top:0}h3{color:var(--blue);margin-bottom:6px}.callout{background:#eef6ff;border-left:5px solid var(--blue);padding:13px 16px;border-radius:8px}.warning{background:#fff7dc;border-left-color:#e3a008}
+label{display:block;font-weight:bold;margin:12px 0 5px}input,select,textarea{font:inherit;width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff}textarea{min-height:90px;resize:vertical}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+button,.button{display:inline-block;border:0;border-radius:9px;padding:11px 16px;font:inherit;font-weight:bold;cursor:pointer;text-decoration:none;background:var(--blue);color:#fff;margin:6px 4px 0 0}button.secondary{background:#e7edf8;color:var(--navy)}button:hover{filter:brightness(.94)}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #dbe3ef;padding:10px;text-align:left;vertical-align:top}th{background:#edf3ff;color:var(--navy)}
+.example{background:#f7f9fc;border:1px solid #e2e8f0;border-radius:10px;padding:14px;overflow-wrap:anywhere}.small{font-size:.92rem;color:var(--muted)}.question{padding:15px 0;border-bottom:1px solid #e7edf5}.question:last-child{border-bottom:0}.question p{font-weight:bold;margin:0 0 8px}.options{display:grid;gap:7px}.options label{font-weight:normal;display:flex;align-items:flex-start;gap:8px;margin:0}.options input{width:auto;margin-top:7px}
+.result{padding:14px;border-radius:9px;margin-top:12px;font-weight:bold}.correct{background:#e6f7ee;color:#11613d}.incorrect{background:#fff0ee;color:#9a271c}
+footer{background:var(--navy);color:#fff;padding:25px 18px;text-align:center}.muted{color:var(--muted)}.checklist label{display:flex;gap:9px;align-items:flex-start;font-weight:normal;margin:10px 0}.checklist input{width:auto;margin-top:7px}
+@media(max-width:600px){.card{padding:17px}header{padding:32px 0}table{font-size:.9rem}th,td{padding:7px}}
+@media print{nav,button,.no-print{display:none!important}body{background:#fff}.card{box-shadow:none;break-inside:avoid}header{background:#fff;color:#000;padding:15px 0}header .eyebrow{color:#000}.wrap{max-width:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Tecnología e Informática · Grado octavo</div>
+<h1>Taller práctico<br>Normas APA</h1>
+<p>Aprende a presentar una investigación, citar las ideas de otras personas y construir referencias bibliográficas con las normas APA, séptima edición.</p>
+<div class="pills"><span class="pill">📘 Guía de trabajo</span><span class="pill">✍️ Actividad individual</span><span class="pill">🎯 Evaluación sobre 10 puntos</span></div>
+</div></header>
+<nav><div class="navinner"><a href="#datos">Estudiante</a><a href="#instrucciones">Instrucciones</a><a href="#formato">Formato APA</a><a href="#citas">Citas y referencias</a><a href="#actividad">Actividad</a><a href="#evaluacion">Autoevaluación</a></div></nav>
+<main class="wrap">
+<section class="card" id="datos"><h2>1. Datos del estudiante</h2>
+<div class="grid"><div><label for="nombre">Nombre completo</label><input id="nombre" placeholder="Escribe tus nombres y apellidos"></div><div><label for="grado">Grado y grupo</label><input id="grado" placeholder="Ej. 8-2"></div><div><label for="fecha">Fecha de entrega</label><input id="fecha" type="date"></div></div>
+<p class="small">Completa estos datos para organizar tu trabajo. Esta página no envía ni guarda tus respuestas en una base de datos.</p></section>
+<section class="card" id="instrucciones"><h2>2. Objetivo e instrucciones</h2>
+<p><strong>Objetivo:</strong> aplicar las normas APA, séptima edición, en un trabajo escrito utilizando Microsoft Word o Google Docs.</p>
+<p>Elige <strong>un tema</strong> de investigación:</p>
+<div class="grid"><div class="example">📱 Uso responsable de las redes sociales</div><div class="example">🤖 Inteligencia artificial en la educación</div><div class="example">🌱 Contaminación ambiental y reciclaje</div><div class="example">🛡️ Riesgos del ciberacoso</div><div class="example">💻 Importancia de la tecnología en la vida cotidiana</div></div>
+<label for="tema">Mi tema elegido</label><select id="tema"><option value="">Selecciona un tema</option><option>Uso responsable de las redes sociales</option><option>Inteligencia artificial en la educación</option><option>Contaminación ambiental y reciclaje</option><option>Riesgos del ciberacoso</option><option>Importancia de la tecnología en la vida cotidiana</option></select>
+<div class="callout"><strong>Producto final:</strong> un documento de aproximadamente 4 a 6 páginas, incluida la portada y las referencias. Investiga en fuentes confiables y redacta con tus propias palabras.</div></section>
+<section class="card" id="formato"><h2>3. Configuración del documento</h2><p>Aplica estas características al documento en Word o Google Docs.</p>
+<table><thead><tr><th>Elemento</th><th>Requisito APA 7</th></tr></thead><tbody>
+<tr><td>Tamaño de papel</td><td>Carta (21,59 × 27,94 cm)</td></tr><tr><td>Márgenes</td><td>2,54 cm en los cuatro lados</td></tr><tr><td>Tipo y tamaño de letra</td><td>Arial 11 o Times New Roman 12 (también hay otras fuentes APA permitidas)</td></tr><tr><td>Interlineado</td><td>Doble (2,0) en el cuerpo del trabajo</td></tr><tr><td>Alineación</td><td>A la izquierda, sin justificar el texto</td></tr><tr><td>Sangría de párrafo</td><td>Primera línea de 1,27 cm</td></tr><tr><td>Número de página</td><td>Esquina superior derecha, desde la portada</td></tr><tr><td>Referencias</td><td>En página nueva, orden alfabético y sangría francesa de 1,27 cm</td></tr></tbody></table>
+<div class="callout warning"><strong>Importante:</strong> en un trabajo estudiantil APA, el encabezado normalmente lleva solo el número de página; no se exige título abreviado (running head), salvo que el docente o la institución lo solicite.</div>
+<h3>Estructura sugerida</h3><ol><li><strong>Portada:</strong> título, estudiante, institución, asignatura, docente y fecha.</li><li><strong>Introducción:</strong> presenta el tema, su importancia y el objetivo.</li><li><strong>Desarrollo:</strong> explica el tema con subtítulos, información investigada y citas.</li><li><strong>Conclusiones:</strong> escribe al menos tres ideas propias sobre lo aprendido.</li><li><strong>Referencias:</strong> registra todas las fuentes citadas en el texto.</li></ol>
+</section>
+<section class="card" id="citas"><h2>4. ¿Cómo se citan las fuentes?</h2>
+<h3>A. Paráfrasis</h3><p>Consiste en explicar una idea de una fuente usando tus propias palabras. Se incluye el apellido del autor y el año.</p><div class="example">Ejemplo ficticio: El uso responsable de la tecnología puede favorecer el aprendizaje (Pérez, 2024).</div>
+<h3>B. Cita textual corta</h3><p>Reproduce exactamente las palabras de una fuente. Usa comillas y agrega autor, año y página cuando la fuente tenga paginación.</p><div class="example">Ejemplo ficticio: “La educación requiere participación activa” (Pérez, 2024, p. 15).</div>
+<p class="small">Los ejemplos son inventados solo para mostrar el formato. No los uses como evidencia ni los registres como fuentes reales.</p>
+<h3>C. Modelo de referencia de una página web</h3><div class="example">Apellido, A. A. (Año, día de mes). <em>Título de la página</em>. Nombre del sitio web. URL</div>
+<p>Completa la referencia con los datos reales disponibles. No inventes autores, fechas, títulos ni enlaces. Si no hay autor o fecha, consulta la regla APA correspondiente.</p>
+<h3>D. Reglas para revisar</h3><ul><li>Toda idea tomada de otra fuente debe tener su cita.</li><li>Las fuentes citadas en el texto deben aparecer en las referencias.</li><li>Las referencias se ordenan alfabéticamente por el apellido del autor o por el título cuando corresponda.</li><li>Aplica sangría francesa a cada referencia.</li><li>Prioriza libros, entidades oficiales, artículos académicos y sitios institucionales confiables.</li></ul>
+</section>
+<section class="card" id="actividad"><h2>5. Actividad práctica</h2><p>Realiza cada tarea en tu procesador de texto. Marca las casillas cuando termines.</p>
+<div class="checklist" id="lista">
+<label><input type="checkbox"> Configuré el tamaño carta y márgenes de 2,54 cm.</label>
+<label><input type="checkbox"> Elegí una fuente y tamaño permitidos y configuré el interlineado doble.</label>
+<label><input type="checkbox"> Elaboré la portada con mis datos y los de la institución.</label>
+<label><input type="checkbox"> Escribí una introducción de dos o tres párrafos.</label>
+<label><input type="checkbox"> Organicé el desarrollo con títulos y subtítulos.</label>
+<label><input type="checkbox"> Añadí al menos dos citas tomadas de fuentes reales.</label>
+<label><input type="checkbox"> Redacté tres conclusiones propias.</label>
+<label><input type="checkbox"> Incluí al menos tres fuentes confiables en las referencias.</label>
+<label><input type="checkbox"> Revisé el orden alfabético, la sangría francesa y la ortografía.</label>
+</div>
+<h3>Preguntas de comprensión</h3>
+<div class="question"><label for="r1">1. ¿Qué son las normas APA y para qué sirven?</label><textarea id="r1" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r2">2. ¿Qué diferencia existe entre una cita textual y una paráfrasis?</label><textarea id="r2" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r3">3. ¿Qué consecuencias puede tener copiar información sin mencionar la fuente?</label><textarea id="r3" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r4">4. ¿Por qué las referencias deben coincidir con las fuentes citadas?</label><textarea id="r4" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r5">5. ¿Qué función cumple la sangría francesa?</label><textarea id="r5" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r6">6. ¿Por qué debemos utilizar fuentes confiables?</label><textarea id="r6" placeholder="Escribe tu respuesta..."></textarea></div>
+<div class="question"><label for="r7">7. ¿Qué datos se incluyen normalmente en una cita textual breve?</label><textarea id="r7" placeholder="Escribe tu respuesta..."></textarea></div>
+<button onclick="descargarRespuestas()">Descargar mis respuestas (.txt)</button><button class="secondary" onclick="window.print()">Imprimir / Guardar como PDF</button>
+<p class="small">Descarga tus respuestas para guardarlas en tu equipo. No se envían automáticamente al docente.</p></section>
+<section class="card" id="evaluacion"><h2>6. Autoevaluación interactiva</h2><p>Selecciona una respuesta por pregunta y pulsa <strong>Calificar</strong>. Este resultado es una práctica; la nota definitiva depende del trabajo entregado.</p>
+<form id="quiz">
+<div class="question"><p>1. ¿Cuánto deben medir normalmente los márgenes APA?</p><div class="options"><label><input type="radio" name="q1" value="a"> 1 cm</label><label><input type="radio" name="q1" value="b"> 2,54 cm</label><label><input type="radio" name="q1" value="c"> 4 cm</label></div></div>
+<div class="question"><p>2. ¿Qué debe hacerse al usar una idea de otra persona?</p><div class="options"><label><input type="radio" name="q2" value="a"> Presentarla como propia</label><label><input type="radio" name="q2" value="b"> Borrar el nombre del autor</label><label><input type="radio" name="q2" value="c"> Citar la fuente</label></div></div>
+<div class="question"><p>3. ¿Cómo se ordena normalmente la lista de referencias?</p><div class="options"><label><input type="radio" name="q3" value="a"> Alfabéticamente</label><label><input type="radio" name="q3" value="b"> Por el color de la portada</label><label><input type="radio" name="q3" value="c"> Aleatoriamente</label></div></div>
+<div class="question"><p>4. ¿Qué es una paráfrasis?</p><div class="options"><label><input type="radio" name="q4" value="a"> Copiar exactamente con comillas</label><label><input type="radio" name="q4" value="b"> Explicar una idea con palabras propias y citar la fuente</label><label><input type="radio" name="q4" value="c"> Escribir sin consultar fuentes</label></div></div>
+<div class="question"><p>5. ¿Dónde se ubica normalmente el número de página en un trabajo estudiantil APA?</p><div class="options"><label><input type="radio" name="q5" value="a"> Abajo, en el centro</label><label><input type="radio" name="q5" value="b"> Solo en la última página</label><label><input type="radio" name="q5" value="c"> Arriba, a la derecha</label></div></div>
+<button type="button" onclick="calificar()">Calificar respuestas</button><button type="reset" class="secondary" onclick="document.getElementById('resultado').innerHTML=''">Volver a intentar</button>
+<div id="resultado" aria-live="polite"></div></form>
+<h3>7. Criterios de evaluación del trabajo</h3><table><thead><tr><th>Criterio</th><th>Puntaje</th></tr></thead><tbody><tr><td>Portada y estructura</td><td>1,0</td></tr><tr><td>Márgenes, letra e interlineado</td><td>1,0</td></tr><tr><td>Títulos, párrafos y numeración</td><td>1,0</td></tr><tr><td>Investigación y contenido</td><td>2,0</td></tr><tr><td>Citas APA</td><td>2,0</td></tr><tr><td>Referencias bibliográficas</td><td>1,5</td></tr><tr><td>Conclusiones y comprensión</td><td>1,5</td></tr><tr><th>Total</th><th>10,0</th></tr></tbody></table>
+<div class="callout"><strong>Entrega:</strong> guarda el documento como <em>Taller_APA_Apellido_Nombre.docx</em> y súbelo a la plataforma indicada por el docente.</div>
+</section>
+</main>
+<footer><div class="wrap"><strong>Taller de Normas APA · Grado 8°</strong><br><span class="small" style="color:#d9e3f7">Revisa las instrucciones del docente y utiliza fuentes confiables.</span></div></footer>
+<script>
+function calificar(){const key={q1:'b',q2:'c',q3:'a',q4:'b',q5:'c'};let score=0,answered=0;for(const [q,a] of Object.entries(key)){const el=document.querySelector('input[name="'+q+'"]:checked');if(el){answered++;if(el.value===a)score++;}}const box=document.getElementById('resultado');if(answered<5){box.className='result incorrect';box.textContent='Has respondido '+answered+' de 5 preguntas. Completa todas antes de calificar.';return;}box.className='result '+(score>=4?'correct':'incorrect');box.textContent='Resultado: '+score+' de 5 respuestas correctas ('+(score*20)+'%). '+(score>=4?'¡Muy bien!':'Repasa la guía e inténtalo nuevamente.');}
+function descargarRespuestas(){const get=id=>document.getElementById(id)?.value?.trim()||'Sin respuesta';let text='TALLER DE NORMAS APA - GRADO OCTAVO\n\nNombre: '+get('nombre')+'\nGrado: '+get('grado')+'\nFecha: '+get('fecha')+'\nTema: '+get('tema')+'\n\n';for(let i=1;i<=7;i++)text+=i+'. '+document.querySelector('label[for="r'+i+'"]').textContent+'\n'+get('r'+i)+'\n\n';const blob=new Blob([text],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Respuestas_Taller_APA.txt';a.click();URL.revokeObjectURL(url);}
+</script>
+</body></html>
